@@ -7,3 +7,10 @@ span.azul{
 span.rojo{
     color: red;
 }
+p {
+    font-style: oblique;
+  }
+
+p.especial1 {
+    color: red;
+  }
