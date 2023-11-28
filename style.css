@@ -7,10 +7,18 @@ span.azul{
 span.rojo{
     color: red;
 }
-p.especial2 {
-    font-style: oblique;
+p {
+    font-family: 'Courier New', Courier, monospace;
   }
 
 p.especial1 {
-    color: red;
+    color: blue;
   }
+
+p.especial2 {
+    color: green;
+}
+
+/*clase universal*/.setmana{
+    color: red;
+}
