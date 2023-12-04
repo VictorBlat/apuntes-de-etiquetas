@@ -28,8 +28,13 @@ function funcion_edad() {
 
 <body onload="algo ()">
 <h1>Eventos HTML</h1>
-<p>escribe en el cuadro de texto</p>
 <input type="text" onkeydown="mifuncion ()">
 <input type="text" onkeypress="funcion2 ()">
+<p>escribe en el cuadro de texto</p>
+Introduce tu nombre:  <input type="text" id="name" onblur="funcion_nom()">
+Introduce tu edad: <input type="text" id="age" onchange="funcion_edad()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
 </body>
 </html>
