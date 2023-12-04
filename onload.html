@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!-- script javascript     -->
+<script>
+function algo() {
+  alert ("buenos dias");
+}
+
+function mifuncion() {
+     alert ("Se ha ejecuatado evento onkeydown");
+}
+     function funcion2 () {
+     alert ("Se ha ejecuatado evento onkeypress");
+}
+function funcion_nom() {
+  var nom = document.getElementById("name").value;
+  alert ('bienvenido ' + nom)
+}
+
+function funcion_edad() {
+  var age = document.getElementById("age").value;
+  alert ('con ' + age + ' ya tendrás el carnet de conducir. ¿no?')
+} 
+</script>
+</head>
+
+<body onload="algo ()">
+<h1>Eventos HTML</h1>
+<p>escribe en el cuadro de texto</p>
+<input type="text" onkeydown="mifuncion ()">
+<input type="text" onkeypress="funcion2 ()">
+</body>
+</html>
