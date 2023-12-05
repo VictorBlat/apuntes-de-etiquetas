@@ -28,6 +28,11 @@ function funcion_select () {
   var dirección = document.getElementById("dirección").value;
   alert ('la teua adreça és '+ dirección)
 }
+
+function funcion_color () {
+  mi_parrafo=document.getElementById("parrafo2").value;
+  miparrafo.style.color='red'
+}
 </script>
 </head>
 
@@ -41,8 +46,10 @@ Introduce tu edad: <input type="text" id="age" onchange="funcion_edad()">
 <br>
 introduce tu dirección
 <input type="text" name="dirección" id="dirección" onselect="funcion_select()">
-
-<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
-
+<hr>
+<h3>Events de ratolí</h3>
+<p onclick="this.style.color='red'">este parrafo ...</p>
+<p id="parrafo2" name ="parrafo2" onclick="funcion_color()">este parrafo se volvera rojo si lo clickas</p>
+<p onmousemove="this.style.color='red'"onmouseover="this.style.color='black'">loo</p>
 </body>
 </html>
