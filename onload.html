@@ -23,6 +23,11 @@ function funcion_edad() {
   var age = document.getElementById("age").value;
   alert ('con ' + age + ' ya tendrás el carnet de conducir. ¿no?')
 } 
+
+function funcion_select () {
+  var dirección = document.getElementById("dirección").value;
+  alert ('la teua adreça és '+ dirección)
+}
 </script>
 </head>
 
@@ -33,6 +38,9 @@ function funcion_edad() {
 <p>escribe en el cuadro de texto</p>
 Introduce tu nombre:  <input type="text" id="name" onblur="funcion_nom()">
 Introduce tu edad: <input type="text" id="age" onchange="funcion_edad()">
+<br>
+introduce tu dirección
+<input type="text" name="dirección" id="dirección" onselect="funcion_select()">
 
 <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
 
