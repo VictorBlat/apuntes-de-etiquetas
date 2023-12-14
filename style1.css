@@ -1,0 +1,29 @@
+header{
+    background-color: aquamarine;
+    color: red;
+}
+footer{
+    background-color: yellow;
+    color: blue;
+}
+
+
+div.div_rojo{
+    background-color: aquamarine;
+    color: red;
+
+}
+div.div_verde{
+    background-color: yellow;
+    color: green;
+}
+div.caja{
+    background-color: yellow;
+    color: red;
+    width: 250px;
+    border: 1px solid red;
+    height: 100px;
+   /* display: inline;    comportamiento en lo largo que sea el texto*/
+    /*display: block;     para que sea en comportamiento de bloque*/ 
+    display: inline-block;
+}
