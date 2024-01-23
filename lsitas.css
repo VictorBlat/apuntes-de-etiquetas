@@ -1,0 +1,21 @@
+ul.circle{
+    list-style: circle;
+}
+ul.square{
+    list-style: square;
+}
+ul.disc{
+    list-style: disc;
+}
+span.amarillo{
+    background-color: yellow;
+}
+span.verde{
+    background-color: green;
+}
+ol.mayus{
+    list-style: upper-alpha;
+}
+ol.minus{
+    list-style: lower-alpha;
+}
