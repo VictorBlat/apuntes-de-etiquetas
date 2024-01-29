@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tablas.css">
+</head>
+<body>
+    <h3>tablas sin borde</h3>
+<section>
+<table>
+    <tr>
+        <td>elemento</td>
+        <td>elemento</td>
+    </tr>
+    <tr>
+        <td>elemento</td>
+        <td>elemento</td>
+    </tr>
+</table>
+</section>
+<section>
+    <h3>tablas con borde</h3>
+    <table border="1">
+        <tr>
+            <td>elemento</td>
+            <td>elemento</td>
+        </tr>
+        <tr>
+            <td>elemento</td>
+            <td>elemento</td>
+        </tr>
+    </table>
+    </section>
+    <h3>tablas con caption</h3>
+    <table border="1">
+        <caption>
+            soy el <b> caption</b> de la tabla(soy opcional)
+        </caption>
+        <tr>
+            <td>elemento</td>
+            <td>elemento</td>
+        </tr>
+        <tr>
+            <td>elemento</td>
+            <td>elemento</td>
+        </tr>
+    </table>
+    </section>
+    <h3>tablas con partes nombradas</h3>
+    <table border="1">
+        <caption>
+            soy el <b> caption</b> de la tabla(soy opcional)
+        </caption>
+        <thead>
+            <tr>
+                <th>parte de thead</th>
+                <th>la parte del thead</th>
+
+            </tr>
+            <tr>
+                <th>sirve para </th>
+                <th>marcar el titulo de la pregunta</th>
+            </tr>
+            <tr>
+                <td>el th es para la negrita</td>
+                <td>se usa normalmente unicamente en el thead</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>parte de tfoot</td>
+                <td>marcar final de la tabla</td>
+            </tr>
+
+        </tfoot>
+    </table>
+    </section>
+</section>
+<h3>tablas</h3>
+<table border="1">
+    <tr>
+        <td rowspan="2">el row span sirve para unir celdas de arriba a abajo</td>
+        <td colspan="2">el colspan sirve para unir celdas de lado a lado</td>
+
+
+    </tr>
+    <tr>
+        <td >element 3</td>
+        
+        <td>elemento 4</td>
+    </tr>
+</table>
+</section>
+<h3>tablas practica</h3>
+<table border="1">
+    <section>
+    <caption>
+        <center>Horario restaurante</center>
+    </caption>
+    <tr>
+        <td></td>
+        <th>viernes</th>
+        <th>sabado</th>
+        <th>domingo</th>
+    </tr>
+    <tr>
+        <td>Desayunos</td>
+        <td rowspan="2" colspan="2">cerrado</td>
+        
+        <td>abierto</td>
+        </tr>
+        <tr>
+            <td>Comida</td>
+            <td>solo vips</td>
+
+    </tr>
+    <tr>
+        <td>Cena</td>
+        <td>cerrado</td>
+        <td>abierto</td>
+        <td>solo vips</td>
+    </tr> 
+</table>
+</section>
+</body>
+</html>
