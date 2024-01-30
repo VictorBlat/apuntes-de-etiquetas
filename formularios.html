@@ -9,7 +9,12 @@
 <body>
     <header><h2>Formularios</h2></header>
     <main>
+        <fieldset>
+            <legend>datos personales</legend>
         <form action="web.php" method="get">
+            <label for="casilla">Casilla</label>
+            <input type="checkbox" name="casilla" id="casilla">
+            <br>
             <p>Nombre
                 <input type="text" name="Nombre" id="Nombre">
             </p>
@@ -54,11 +59,84 @@
                 Horario
                 <input type="time" id="hora" name="hora">
             </p>
+            <p>selecciona
+            <input type="checkbox" name="checkbox">
+        </p>
+        <p>
+            selecciona uno
+            <input type="radio" name="color" id="rojo" checked>rojo
+            <input type="radio" name="color" id="azul">azul
+            <input type="radio" name="color" id="verde">verde
+            
+        </p>
+        
+        <p>
+            color
+            <input type="color" name="color">
+        </p>
+        <p>
+            Nivel de ingles (0/10)<p>(Nivel:<span id="nivel"></span>)</p>
+            <input type="range" id="ingles" min="0" max="10" step="1">
+            </p>
+            
+            </div>
+            </main>
+            <script>
+            var slider = document.getElementById( "ingles" );
+            var output = document.getElementById( "nivel");
+            output.innerHTML = slider.value;
+            slider.oninput = function () {
+            output.innerHTML = this.value;
+            }
+            </script>
+            <textarea name="observaciones" id="observaciones" cols="30" rows="10" maxlength="150"></textarea>
+            <p>
+                Menu
+                <select name="Menu" id="Menu">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </p>
+            <p>
+                talla
+                <select name="Menu" id="Menu" size="4" multiple >
+                    <option value="0" selected>selecciona talla</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+            </p>
+<fieldset>
+    <legend>selecciona curso</legend>
+    <p>
+        selecciona tu curso
+        <select name="Curso" id="Curso" >
+            <optgroup label="SMR"></optgroup>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            <optgroup label="ASIR"></optgroup>
+                <option value="3">1</option>
+                <option value="4">2</option>
+            <optgroup label="DAM"></optgroup>
+                <option value="5">1</option>
+                <option value="6">2</option>
+
+        </select>
+    </p>
+</fieldset>
+
+    
+
             
 
+
+
+            <br>
             <input type="submit" value="enviar">
             <input type="reset" value="reiniciar">
             <input type="button" value="púlsame">
+        </fieldset>
         </form>
     </main>
 </body>
