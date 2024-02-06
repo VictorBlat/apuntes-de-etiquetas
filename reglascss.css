@@ -1,0 +1,11 @@
+a[href*="elgrao"]{
+    color: red;
+}
+h4{
+    counter-reset: cuenta-ciclos;
+
+}
+p.ciclos::before{
+    counter-increment: cuenta-ciclos 5;
+    content: counter(cuenta-ciclos) ". ";
+}
